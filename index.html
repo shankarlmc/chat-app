@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chat App</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div id="chatbox">
+            <div id="friendslist">
+                <div id="topmenu">
+                    <span class="friends"></span>
+                    <span class="chats"></span>
+                    <span class="history"></span>
+                </div>
+                <div id="friends">
+                </div>
+                <div id="search">
+                    <input type="text" id="searchfield" value="Search contacts..." />
+                </div>
+            </div>
+
+
+            <div id="chatview" class="p1">
+                <div id="profile">
+                    <div id="close">
+                        <div class="cy"></div>
+                        <div class="cx"></div>
+                    </div>
+                    <p></p>
+                </div>
+                <div id="chat-messages">
+                    <label></label>
+
+                    <div class="message">
+                        <img src="./images/avatar.png" />
+                        <div class="bubble">
+                            Whats up bro
+                            <div class="corner"></div>
+                            <span>3 min</span>
+                        </div>
+                    </div>
+
+                    <div class="message right">
+                        <img src="./images/avatar.png" />
+                        <div class="bubble">
+                            all good!!
+                            <div class="corner"></div>
+                            <span>2 min</span>
+                        </div>
+                    </div>
+                    <div class="message right">
+                        <img src="./images/avatar.png" />
+                        <div class="bubble">
+                            Timro kx vana
+                            <div class="corner"></div>
+                            <span>1 min</span>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <img src="./images/avatar.png" />
+                        <div class="bubble">
+                            Thik xa mero ni
+                            <div class="corner"></div>
+                            <span>1 min</span>
+                        </div>
+                    </div>
+                    <div class="message right">
+                        <img src="./images/avatar.png" />
+                        <div class="bubble">
+                            Thik xa mero ni
+                            <div class="corner"></div>
+                            <span>1 min</span>
+                        </div>
+                    </div>
+                </div>
+                <form action="" method="POST" id="chat-with-friends">
+                    <div id="sendmessage">
+                        <input type="text" value="Send message..." />
+                        <button id="send" type="submit"></button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+        <script src="js/app.js" type="module"></script>
+    </body>
+</html>
