@@ -2,7 +2,7 @@ import SearchUser from "./searchUser.js";
 import Friends from "./friends.js";
 import metaTags from "./meta.js";
 import SendMessage from "./uploadMessage.js";
-import loadMessages from "./messages.js";
+import Messages from "./messages.js";
 
 const search = document.getElementById("searchfield");
 const msgInput = document.querySelector("#sendmessage input");
@@ -128,10 +128,6 @@ for (const friend of friends) {
     chatView.style.display = "block";
 
     // load all the messages for clicked users
-    loadMessages({
-      sender: 111,
-      receiver: receiverUser,
-    });
 
     closeBtn.addEventListener("click", function () {
       chatMessage.classList.remove("animate");
@@ -152,6 +148,8 @@ for (const friend of friends) {
         msgInput.value = "Send message...";
       }, 50);
     });
+
+    Messages(111, receiverUser);
   });
 }
 
@@ -159,6 +157,7 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   msgInput.value = "";
 
+  // this section is only for testing purpose
   var mainMessageDiv = document.createElement("div");
 
   if (message !== "") {
@@ -169,13 +168,14 @@ form.addEventListener("submit", (event) => {
       '<div class="corner"></div><span>1 min</span></div>';
 
     chatMessage.appendChild(mainMessageDiv);
+    // delete this section after database was added
+
     SendMessage({
       sender: 1111,
       receiver: receiverUser,
       message,
     });
-  } else {
-    console.log("message field is empty");
   }
+
   chatMessage.scroll({ top: chatMessage.scrollHeight, behavior: "smooth" });
 });
