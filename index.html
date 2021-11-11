@@ -3,27 +3,36 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Chat App</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-
         <div id="chatbox">
+            <div class="profile-card-container">
+                <img class="profile-round-img" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
+                <h3>Ricky Park</h3>
+                <h6>New York</h6>
+                <p>User interface designer and <br /> front-end developer</p>
+                <div class="profile-action-buttons">
+                    <button class="primary">
+                        Logout
+                    </button>
+                </div>
+                <span class="close-profile-card">&#10006;</span>
+            </div>
             <div id="friendslist">
                 <div id="topmenu">
                     <span class="friends"></span>
                     <span class="chats"></span>
-                    <span class="history"></span>
+                    <span class="own-profile"></span>
                 </div>
-                <div id="friends">
-                </div>
+                <div id="friends"></div>
                 <div id="search">
                     <input type="text" id="searchfield" value="Search contacts..." />
                 </div>
+
             </div>
-
-
             <div id="chatview" class="p1">
                 <div id="profile">
                     <div id="close">
@@ -32,18 +41,14 @@
                     </div>
                     <p></p>
                 </div>
-                <div id="chat-messages">
-
-                </div>
+                <div id="chat-messages"></div>
                 <form action="" method="POST" id="chat-with-friends">
                     <div id="sendmessage">
                         <input type="text" value="Send message..." />
                         <button id="send" type="submit"></button>
                     </div>
                 </form>
-
             </div>
-
         </div>
 
         <script src="js/app.js" type="module"></script>

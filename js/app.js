@@ -16,6 +16,9 @@ const friendList = document.querySelector("#friendslist");
 const chatView = document.querySelector("#chatview");
 const closeBtn = document.querySelector("#close");
 const form = document.querySelector("#chat-with-friends");
+const ownProfile = document.querySelector(".own-profile");
+const profileCard = document.querySelector(".profile-card-container");
+const closeProfileCard = document.querySelector(".close-profile-card");
 
 let searchingContact = "";
 let message = "";
@@ -23,6 +26,14 @@ let receiverUser = null;
 
 Friends();
 metaTags();
+
+ownProfile.addEventListener("click", () => {
+  profileCard.classList.add("active");
+});
+
+closeProfileCard.addEventListener("click", () => {
+  profileCard.classList.remove("active");
+});
 
 const friends = document.querySelectorAll(".friend");
 
