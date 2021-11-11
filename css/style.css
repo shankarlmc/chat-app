@@ -3,13 +3,13 @@
   padding: 0px;
 }
 body {
-  background: #f0f1f2;
+  background: #a8a8a8;
   font: 12px "Open Sans", sans-serif;
 }
 
 #chatbox {
   width: 300px;
-  background: #fff;
+  background: rgb(14, 13, 13);
   border-radius: 6px;
   overflow: hidden;
   height: 484px;
@@ -37,23 +37,23 @@ body {
   border-bottom: 2px solid #d8dfe3;
   position: sticky;
   top: 0;
-  background: #fff;
+  background: rgb(0, 0, 0);
 }
 #topmenu span {
   float: left;
   width: 96px;
   height: 50px;
-  background: url("../images/menu-icon.png") no-repeat;
+  background: url("../images/top-menu.png") no-repeat;
 }
 #topmenu span.friends {
   background-position: -11px -60px;
 }
 #topmenu span.chats {
-  background-position: -86px -13px;
+  background-position: -86px -7px;
   cursor: pointer;
 }
 #topmenu span.chats:hover {
-  background-position: -86px -108px;
+  background-position: -86px -100px;
   cursor: pointer;
 }
 #topmenu span.own-profile {
@@ -126,7 +126,7 @@ body {
   position: relative;
 }
 .friend:hover {
-  background: #f1f4f6;
+  background: #166aa1;
   cursor: pointer;
 }
 .friend img {
@@ -151,7 +151,7 @@ body {
 .friend p strong {
   font-weight: 600;
   font-size: 15px;
-  color: #597a96;
+  color: #028bff;
 }
 .friend p span {
   font-size: 13px;
@@ -174,7 +174,7 @@ body {
   background: #eaeef0;
 }
 #search {
-  background: #e3e9ed url("../images/search.png") -11px 0 no-repeat;
+  background: #022b46;
   height: 60px;
   width: 320px;
   position: sticky;
@@ -182,11 +182,11 @@ body {
   left: 0;
 }
 #searchfield {
-  background: #e3e9ed;
+  background: #022b46;
   margin: 21px 0 0 55px;
   border: none;
   padding: 0;
-  font-size: 14px;
+  font-size: 18px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400px;
   color: #8198ac;
@@ -201,7 +201,7 @@ body {
   top: 0;
   left: 0;
   display: none;
-  background: #fff;
+  background: #000;
 }
 #profile {
   height: 60px;
@@ -263,11 +263,11 @@ body {
   border-radius: 4px;
   text-align: center;
   margin-top: 10px;
-  background-color: #fafdfc;
+  background-color: #242e2b;
   margin-left: 8px;
 }
 .information p {
-  color: rgb(48, 58, 2);
+  color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: 400;
   margin: 20px;
@@ -289,6 +289,7 @@ body {
   -ms-transition: all 200ms cubic-bezier(0, 0.995, 0.99, 1);
   -o-transition: all 200ms cubic-bezier(0, 0.995, 0.99, 1);
   transition: all 200ms cubic-bezier(0, 0.995, 0.99, 1);
+  background-color: rgb(0, 0, 0);
 }
 #chat-messages.animate {
   opacity: 1;
@@ -326,12 +327,12 @@ body {
   margin-right: -38px;
 }
 .message .bubble {
-  background: #f0f4f7;
+  background: #2e6995;
   font-size: 13px;
   font-weight: 600;
   padding: 12px 13px;
   border-radius: 5px 5px 5px 0px;
-  color: #8495a3;
+  color: #fff;
   position: relative;
   float: left;
   z-index: 111;
@@ -359,7 +360,7 @@ body {
 div.message.right .corner {
   left: auto;
   right: -7px;
-  background: #f0f4f7 url("../images/bubble-corner.png") 0 0 no-repeat;
+  background: #2e6995 url("../images/bubble-corner.png") 0 0 no-repeat;
   clip-path: polygon(80% 0%, 100% 100%, 10% 50%);
   width: 50px;
   height: 30px;
@@ -373,30 +374,30 @@ div.message.right .corner {
 }
 #sendmessage {
   height: 60px;
-  border-top: 1px solid #e7ebee;
+  border-top: 1px solid #3d4143;
   position: absolute;
   left: 0;
   bottom: 0;
   right: 0px;
   width: 99%;
-  background: #fff;
+  background: #000;
 }
 
 #sendmessage input {
-  background: #fff;
+  background: #000;
   margin: 21px 0 0 21px;
   border: none;
   padding: 0;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  color: #a7a4a4;
+  color: #f1eded;
 }
 #sendmessage input:focus {
   outline: none;
 }
 #sendmessage button {
-  background: #fff url("../images/send.png") 0 -41px no-repeat;
+  background: #020202 url("../images/send.png") 0 -41px no-repeat;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -406,7 +407,6 @@ div.message.right .corner {
 }
 #sendmessage button:hover {
   cursor: pointer;
-  background-position: 0 0;
 }
 #sendmessage button:focus {
   outline: 0;
