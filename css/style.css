@@ -274,6 +274,7 @@ body {
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
+  padding: 4px 0;
 }
 #chat-messages {
   opacity: 0;
@@ -504,16 +505,6 @@ div.message.right .corner {
   overflow: hidden;
   border-radius: 6px;
 }
-/* @media screen and (min-width: 992px) {
-  #friends {
-    border: 2px solid green;
-    margin-right: 10px;
-  }
-  #chat-messages {
-    border: 2px solid blue;
-    margin-right: 10px;
-  }
-} */
 
 @media screen and (max-width: 992px) {
   #friends {
@@ -532,8 +523,3 @@ div.message.right .corner {
     width: 95%;
   }
 }
-/* @media screen and (max-width: 300px) {
-  body {
-    display: none;
-  }
-} */
